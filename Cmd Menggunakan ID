@@ -1,0 +1,19 @@
+//Contohnya Adalah : /test 1 (1 adalah contoh id player) 
+
+//Saya Sarankan untuk menggunakan include ZCMD agar mudah. 
+
+//Awal Pertama
+
+CMD:test(playerid, params[]) 
+{
+    new
+       id;
+    if(sscanf(params "u", id)) SendClientMessage(playerid, COLOR_WHITE, "/test (playerid)");//Untuk jika player memasukan cmd saja tidak memasukab Id Playernya
+    else if (id == PLAYER_INVALID_ID)) SendClientMessage(playerid, COLOR_WHITE, "Id Tidak ditemukan");//Ini Contoh Player Online Hanya 3 Orang dan idnya adalah 0,1,2 Dia mamasukab Id 6 Jadi Idnya Tidak Di Temukan
+    else
+    {
+       //Isi Dengan Yang Kalian Mau Seperti SendClientMessage
+       //Atau Seperti ShowPlayerDialog Dll.
+    }
+    return 1;
+}
